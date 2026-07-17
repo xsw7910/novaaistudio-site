@@ -1,14 +1,903 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Privacy Policy for the ReplyWise mobile application by NovaAI Studio." />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+<meta
+ name="description"
+ content="Privacy Policy for the ReplyWise mobile application by NovaAI Studio."
+/>
+
   <title>Privacy Policy - ReplyWise</title>
+
   <style>
+    :root {
+      --background: #f7fafc;
+      --surface: #ffffff;
+      --text-primary: #18212f;
+      --text-secondary: #64748b;
+      --heading: #123d43;
+      --primary: #0f7c82;
+      --primary-light: #e8f7f6;
+      --border: #dbe5e8;
+      --warning-background: #fff8e7;
+      --warning-border: #e9b949;
+      --shadow: 0 12px 35px rgba(31, 65, 73, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 40px auto;
-      padding
+      margin: 0;
+      background: var(--background);
+      color: var(--text-primary);
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .page-container {
+      width: min(940px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 40px 0 60px;
+    }
+
+    .header {
+      margin-bottom: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .brand-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #2563eb, #0f8f83);
+      box-shadow: 0 10px 24px rgba(15, 124, 130, 0.22);
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .brand-name {
+      margin: 0;
+      font-size: 20px;
+      color: var(--heading);
+    }
+
+    .brand-developer {
+      margin: 2px 0 0;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: var(--heading);
+      font-size: clamp(34px, 6vw, 50px);
+      line-height: 1.15;
+      letter-spacing: -0.035em;
+    }
+
+    .intro {
+      max-width: 760px;
+      margin: 0;
+      color: var(--text-secondary);
+      font-size: 17px;
+    }
+
+    .updated {
+      margin-top: 16px;
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    .content-card {
+      margin-top: 30px;
+      padding: clamp(22px, 5vw, 44px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .contents {
+      margin-bottom: 32px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #f9fcfc;
+    }
+
+    .contents-title {
+      margin: 0 0 10px;
+      color: var(--heading);
+      font-weight: 700;
+    }
+
+    .contents-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+    }
+
+    .contents a {
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .contents a:hover {
+      text-decoration: underline;
+    }
+
+    .notice {
+      margin: 20px 0 30px;
+      padding: 16px 18px;
+      background: var(--warning-background);
+      border-left: 4px solid var(--warning-border);
+      border-radius: 10px;
+    }
+
+    h2 {
+      margin: 38px 0 10px;
+      color: var(--heading);
+      font-size: 23px;
+      line-height: 1.3;
+      scroll-margin-top: 20px;
+    }
+
+    h2:first-of-type {
+      margin-top: 0;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      color: var(--heading);
+      font-size: 18px;
+    }
+
+    p {
+      margin: 8px 0 15px;
+    }
+
+    ul {
+      margin: 10px 0 18px;
+      padding-left: 24px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    a {
+      color: var(--primary);
+    }
+
+    .service-list strong {
+      color: var(--heading);
+    }
+
+    .contact-box {
+      margin-top: 18px;
+      padding: 18px 20px;
+      background: var(--primary-light);
+      border: 1px solid #c8e8e5;
+      border-radius: 14px;
+    }
+
+    .contact-box p {
+      margin: 5px 0;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: var(--text-secondary);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      margin: 0 8px;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      .page-container {
+        width: min(100% - 20px, 940px);
+        padding-top: 24px;
+      }
+
+      .content-card {
+        border-radius: 18px;
+      }
+
+      .brand {
+        margin-bottom: 24px;
+      }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #08121d;
+        --surface: #101d2a;
+        --text-primary: #e9f1f6;
+        --text-secondary: #a8b6c4;
+        --heading: #e6f8f5;
+        --primary: #65d5cc;
+        --primary-light: #102d31;
+        --border: #263a49;
+        --warning-background: #302918;
+        --warning-border: #d7a93d;
+        --shadow: none;
+      }
+
+      .contents {
+        background: #0c1925;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <main class="page-container">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">R</div>
+
+```
+    <div>
+      <p class="brand-name"><strong>ReplyWise</strong></p>
+      <p class="brand-developer">by NovaAI Studio</p>
+    </div>
+  </div>
+
+  <h1>Privacy Policy</h1>
+
+  <p class="intro">
+    This Privacy Policy explains how NovaAI Studio collects, uses,
+    processes, stores, and shares information when you use the
+    ReplyWise mobile application and its related services.
+  </p>
+
+  <p class="updated">
+    <strong>Effective date:</strong> July 16, 2026<br />
+    <strong>Last updated:</strong> July 16, 2026
+  </p>
+</header>
+
+<article class="content-card">
+  <nav class="contents" aria-label="Privacy Policy contents">
+    <p class="contents-title">Contents</p>
+
+    <div class="contents-links">
+      <a href="#about">About this policy</a>
+      <a href="#information">Information we process</a>
+      <a href="#use">How information is used</a>
+      <a href="#sharing">Sharing and service providers</a>
+      <a href="#retention">Retention</a>
+      <a href="#deletion">Deletion requests</a>
+      <a href="#security">Security</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <div class="notice">
+    <strong>Important:</strong>
+    Please do not enter passwords, payment-card numbers, government
+    identification numbers, private medical information, confidential
+    business information, or other highly sensitive information into
+    ReplyWise or its support form.
+  </div>
+
+  <h2 id="about">1. About This Privacy Policy</h2>
+
+  <p>
+    ReplyWise is a mobile application provided by
+    <strong>NovaAI Studio</strong> (“NovaAI Studio,” “we,” “us,” or
+    “our”). ReplyWise helps users draft replies, polish written text,
+    understand the meaning or tone of messages, and receive writing
+    guidance.
+  </p>
+
+  <p>
+    This Privacy Policy applies to the ReplyWise mobile application,
+    the ReplyWise backend service, and support or feedback services
+    provided in connection with ReplyWise.
+  </p>
+
+  <p>
+    By using ReplyWise, you acknowledge that information may be
+    processed as described in this Privacy Policy. If you do not agree
+    with this policy, please do not use ReplyWise.
+  </p>
+
+  <h2 id="information">2. Information We Process</h2>
+
+  <h3>2.1 Text and instructions you submit</h3>
+
+  <p>
+    When you use features such as Reply, Polish, Explain, or Guidance,
+    ReplyWise processes the text, message content, instructions,
+    selected tone, language, and other information that you choose to
+    submit.
+  </p>
+
+  <p>
+    Submitted text is transmitted to our backend service and may be
+    sent to an artificial intelligence service provider to generate
+    the requested response, explanation, or edited text.
+  </p>
+
+  <p>
+    You are responsible for ensuring that you have the right to submit
+    and process any message or information entered into ReplyWise.
+  </p>
+
+  <h3>2.2 Generated content</h3>
+
+  <p>
+    ReplyWise processes AI-generated replies, polished text,
+    explanations, writing suggestions, and related result metadata so
+    that the results can be displayed to you.
+  </p>
+
+  <p>
+    Generated results or history may be stored locally on your device
+    when the relevant history feature is enabled. Locally stored data
+    remains on your device until you delete it, clear the app data, or
+    uninstall the app.
+  </p>
+
+  <h3>2.3 App, account, and device information</h3>
+
+  <p>
+    To operate the service, ReplyWise may process limited app and
+    device-related information, including:
+  </p>
+
+  <ul>
+    <li>An app-generated or anonymous user identifier</li>
+    <li>A privacy-preserving device identifier or hashed identifier</li>
+    <li>Device platform and operating-system information</li>
+    <li>App version and build number</li>
+    <li>Selected app language</li>
+    <li>Premium entitlement or subscription status</li>
+    <li>Credit balance and usage counters</li>
+    <li>Request, transaction, or idempotency identifiers</li>
+    <li>Rate-limit, reward, and fraud-prevention information</li>
+    <li>Error messages and limited technical diagnostics</li>
+  </ul>
+
+  <p>
+    This information is used to authenticate app sessions, maintain
+    usage balances, restore purchases, prevent abuse, and keep the
+    service functioning reliably.
+  </p>
+
+  <h3>2.4 Purchase and subscription information</h3>
+
+  <p>
+    If you purchase credits or a subscription, the transaction is
+    processed through Google Play. ReplyWise and its subscription
+    management provider may receive information such as:
+  </p>
+
+  <ul>
+    <li>The purchased product or subscription</li>
+    <li>Transaction and purchase identifiers</li>
+    <li>Subscription status and expiration information</li>
+    <li>Entitlement status</li>
+    <li>Purchase validation and restoration information</li>
+    <li>Refund, cancellation, renewal, or chargeback status</li>
+  </ul>
+
+  <p>
+    NovaAI Studio does not directly receive or store your complete
+    payment-card number. Payment information is handled by Google Play
+    and its payment providers.
+  </p>
+
+  <h3>2.5 Advertising information</h3>
+
+  <p>
+    ReplyWise may offer rewarded advertising that allows eligible
+    users to receive app credits after completing an advertisement.
+  </p>
+
+  <p>
+    Google AdMob and its advertising partners may process information
+    such as advertising identifiers, IP address, general device
+    information, approximate location derived from network
+    information, ad interactions, consent choices, and fraud-detection
+    information according to their own privacy policies and applicable
+    settings.
+  </p>
+
+  <p>
+    Availability of rewarded ads may depend on location, consent,
+    device configuration, advertising inventory, usage limits, and
+    fraud-prevention checks.
+  </p>
+
+  <h3>2.6 Support and feedback information</h3>
+
+  <p>
+    If you contact ReplyWise support or submit feedback using the
+    support form, we may receive information you choose to provide,
+    including:
+  </p>
+
+  <ul>
+    <li>Your email address</li>
+    <li>Your question, feedback, or issue description</li>
+    <li>Attachments or screenshots you voluntarily upload</li>
+    <li>App version and build number</li>
+    <li>Device platform</li>
+    <li>Selected language</li>
+    <li>Other diagnostic details included in the form</li>
+  </ul>
+
+  <p>
+    Support and feedback forms may be provided through Tally. Please
+    avoid including sensitive or unrelated personal information in a
+    support request.
+  </p>
+
+  <h3>2.7 Server logs and technical information</h3>
+
+  <p>
+    Our backend and infrastructure providers may automatically process
+    limited technical logs, including timestamps, IP addresses,
+    request status, endpoint information, security events, error
+    details, rate-limit events, and pseudonymous identifiers.
+  </p>
+
+  <p>
+    These logs are used for security, troubleshooting, service
+    operation, abuse prevention, and system reliability.
+  </p>
+
+  <h2 id="use">3. How We Use Information</h2>
+
+  <p>We may use information to:</p>
+
+  <ul>
+    <li>
+      Generate replies, polished text, explanations, and writing
+      guidance requested by the user
+    </li>
+
+    <li>
+      Display and manage generated results and local app history
+    </li>
+
+    <li>
+      Authenticate app sessions and recognize eligible devices or
+      installations
+    </li>
+
+    <li>
+      Maintain free usage, credit balances, rewarded-ad credits, and
+      premium access
+    </li>
+
+    <li>
+      Process, validate, synchronize, and restore purchases and
+      subscriptions
+    </li>
+
+    <li>
+      Provide rewarded advertisements and verify completed rewards
+    </li>
+
+    <li>
+      Respond to support requests and investigate technical problems
+    </li>
+
+    <li>
+      Detect fraud, misuse, duplicate rewards, automated activity, and
+      attempts to bypass limits
+    </li>
+
+    <li>
+      Maintain security, availability, compatibility, and service
+      reliability
+    </li>
+
+    <li>
+      Diagnose errors and improve app performance and user experience
+    </li>
+
+    <li>
+      Enforce our Terms of Service and comply with applicable legal
+      obligations
+    </li>
+  </ul>
+
+  <p>
+    We do not sell the private text you submit to ReplyWise.
+  </p>
+
+  <p>
+    We do not use the content of private messages submitted to
+    ReplyWise for our own targeted advertising.
+  </p>
+
+  <h2 id="sharing">4. Sharing and Third-Party Service Providers</h2>
+
+  <p>
+    We may share or allow processing of information only as reasonably
+    necessary to provide, secure, support, and maintain ReplyWise.
+  </p>
+
+  <p>
+    ReplyWise may use the following categories of third-party service
+    providers:
+  </p>
+
+  <ul class="service-list">
+    <li>
+      <strong>OpenAI</strong> — to process submitted text and generate
+      AI-powered replies, polishing, explanations, or guidance.
+    </li>
+
+    <li>
+      <strong>Google Play</strong> — for app distribution, purchases,
+      subscriptions, billing, refunds, and purchase restoration.
+    </li>
+
+    <li>
+      <strong>RevenueCat</strong> — for subscription, purchase, and
+      entitlement management.
+    </li>
+
+    <li>
+      <strong>Google AdMob</strong> — for rewarded advertising,
+      consent management, ad measurement, and fraud prevention where
+      advertising is enabled.
+    </li>
+
+    <li>
+      <strong>Tally</strong> — for support and feedback form
+      submissions.
+    </li>
+
+    <li>
+      <strong>Cloud and infrastructure providers</strong> — for
+      application hosting, databases, networking, backups, monitoring,
+      and security.
+    </li>
+  </ul>
+
+  <p>
+    These providers may process information under their own privacy
+    policies, terms, security practices, and legal obligations.
+  </p>
+
+  <p>
+    We may also disclose information when reasonably necessary to:
+  </p>
+
+  <ul>
+    <li>Comply with applicable law or a valid legal request</li>
+    <li>Protect users, NovaAI Studio, or the public from harm</li>
+    <li>Investigate fraud, abuse, or security incidents</li>
+    <li>Enforce our agreements and protect our legal rights</li>
+    <li>
+      Complete a merger, acquisition, restructuring, or transfer of
+      the app, subject to applicable legal protections
+    </li>
+  </ul>
+
+  <h2 id="international">5. International Data Processing</h2>
+
+  <p>
+    ReplyWise and its service providers may process information in
+    Canada, the United States, and other countries where service
+    providers or infrastructure are located.
+  </p>
+
+  <p>
+    Privacy and data-protection laws in those countries may differ from
+    the laws in your country or region.
+  </p>
+
+  <h2 id="retention">6. Data Retention</h2>
+
+  <p>
+    We retain information only for as long as reasonably necessary for
+    the purposes described in this Privacy Policy, including service
+    operation, security, purchase verification, fraud prevention,
+    dispute resolution, support, and legal compliance.
+  </p>
+
+  <p>
+    Retention periods vary depending on the type of information:
+  </p>
+
+  <ul>
+    <li>
+      Locally stored app history remains on your device until you
+      delete it, clear app storage, or uninstall ReplyWise.
+    </li>
+
+    <li>
+      Usage, entitlement, purchase, credit, and fraud-prevention
+      records may be retained while needed to operate the service and
+      resolve purchase or account issues.
+    </li>
+
+    <li>
+      Technical logs may be retained for a limited period for
+      security, troubleshooting, monitoring, and abuse prevention.
+    </li>
+
+    <li>
+      Support submissions may be retained until the request has been
+      resolved and for a reasonable period afterward for recordkeeping,
+      security, and dispute resolution.
+    </li>
+
+    <li>
+      Information may be retained for longer when required by law,
+      necessary to establish or defend legal claims, or needed to
+      prevent fraud or abuse.
+    </li>
+  </ul>
+
+  <p>
+    Text submitted for AI processing may be retained temporarily by
+    NovaAI Studio or relevant service providers as necessary to
+    process the request, maintain security, diagnose errors, and
+    provide the service, subject to provider configurations and
+    policies.
+  </p>
+
+  <h2 id="deletion">7. Access, Correction, and Deletion Requests</h2>
+
+  <p>
+    Depending on your location, you may have rights to request access,
+    correction, deletion, restriction, objection, or portability of
+    certain personal information.
+  </p>
+
+  <p>
+    You may request deletion of personal information associated with
+    ReplyWise by contacting us using the support form or email address
+    listed below.
+  </p>
+
+  <p>
+    To protect users and prevent unauthorized requests, we may ask for
+    information reasonably necessary to verify the request.
+  </p>
+
+  <p>
+    Some information may be retained when required or permitted for:
+  </p>
+
+  <ul>
+    <li>Purchase and transaction records</li>
+    <li>Fraud and abuse prevention</li>
+    <li>Security investigations</li>
+    <li>Tax, accounting, or legal obligations</li>
+    <li>Resolving disputes and enforcing agreements</li>
+  </ul>
+
+  <p>
+    Deleting the app does not automatically cancel a Google Play
+    subscription. Active subscriptions must be managed or cancelled
+    through your Google Play account.
+  </p>
+
+  <h2 id="choices">8. Your Privacy Choices</h2>
+
+  <p>You can reduce or control data processing by:</p>
+
+  <ul>
+    <li>
+      Avoiding the submission of personal, confidential, or sensitive
+      information
+    </li>
+
+    <li>
+      Editing or anonymizing message content before submitting it
+    </li>
+
+    <li>
+      Deleting saved history from within the app where that option is
+      available
+    </li>
+
+    <li>
+      Managing advertising consent and advertising identifiers through
+      the app or your device settings
+    </li>
+
+    <li>
+      Choosing not to use rewarded advertisements
+    </li>
+
+    <li>
+      Managing or cancelling subscriptions through Google Play
+    </li>
+
+    <li>
+      Contacting us to request access to or deletion of eligible
+      information
+    </li>
+  </ul>
+
+  <h2 id="security">9. Data Security</h2>
+
+  <p>
+    We use reasonable administrative, technical, and organizational
+    safeguards designed to protect information against unauthorized
+    access, alteration, disclosure, loss, or misuse.
+  </p>
+
+  <p>
+    These safeguards may include encrypted network transmission,
+    access controls, authentication, rate limiting, database
+    protections, monitoring, pseudonymous identifiers, and
+    fraud-prevention measures.
+  </p>
+
+  <p>
+    However, no method of electronic transmission or storage is
+    completely secure. We cannot guarantee absolute security.
+  </p>
+
+  <h2 id="children">10. Children's Privacy</h2>
+
+  <p>
+    ReplyWise is not directed to children under 13, or a higher minimum
+    age where required by applicable law.
+  </p>
+
+  <p>
+    We do not knowingly collect personal information from children in
+    violation of applicable law. If you are a parent or guardian and
+    believe that a child has provided personal information through
+    ReplyWise, please contact us so that we can review and address the
+    request.
+  </p>
+
+  <h2 id="ai">11. Artificial Intelligence</h2>
+
+  <p>
+    ReplyWise uses artificial intelligence to generate or analyze text.
+    AI-generated content may be inaccurate, incomplete, misleading,
+    offensive, or inappropriate for a particular situation.
+  </p>
+
+  <p>
+    You should review all generated content before using or sending it.
+    ReplyWise should not be relied upon as a substitute for legal,
+    medical, financial, mental-health, employment, or other
+    professional advice.
+  </p>
+
+  <h2 id="links">12. External Links and Services</h2>
+
+  <p>
+    ReplyWise may provide links to external websites or services,
+    including support, privacy, payment, subscription, or advertising
+    services.
+  </p>
+
+  <p>
+    NovaAI Studio is not responsible for the privacy practices or
+    content of third-party websites. You should review the privacy
+    policy of any external service you use.
+  </p>
+
+  <h2 id="changes">13. Changes to This Privacy Policy</h2>
+
+  <p>
+    We may update this Privacy Policy when ReplyWise features, data
+    practices, service providers, legal requirements, or security
+    practices change.
+  </p>
+
+  <p>
+    The updated version will be published on this page with a revised
+    “Last updated” date. When a change is material, we may also provide
+    an in-app notice or another appropriate notification.
+  </p>
+
+  <h2 id="contact">14. Contact Us</h2>
+
+  <p>
+    For privacy questions, support requests, or requests to access,
+    correct, or delete eligible personal information, contact:
+  </p>
+
+  <div class="contact-box">
+    <p><strong>Developer:</strong> NovaAI Studio</p>
+    <p><strong>Application:</strong> ReplyWise</p>
+    <p><strong>Location:</strong> Alberta, Canada</p>
+
+    <p>
+      <strong>Email:</strong>
+      <a href="mailto:support@novaaistudio.ca">
+        support@novaaistudio.ca
+      </a>
+    </p>
+
+    <p>
+      <strong>Support form:</strong>
+      <a
+        href="https://tally.so/r/eqlJEo"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        ReplyWise Support
+      </a>
+    </p>
+  </div>
+
+  <h2 id="disclaimer">15. Legal Notice</h2>
+
+  <p>
+    This Privacy Policy is intended to describe the current ReplyWise
+    data practices in clear language. It does not constitute legal
+    advice.
+  </p>
+
+  <p>
+    NovaAI Studio should review and update this document whenever
+    ReplyWise adds or removes features, permissions, analytics tools,
+    advertising providers, AI providers, account features, or other
+    data-processing activities.
+  </p>
+</article>
+
+<footer>
+  <p>
+    © 2026 NovaAI Studio. All rights reserved.
+  </p>
+
+  <p>
+    <a href="replywise-privacy.html">Privacy Policy</a>
+    ·
+    <a href="replywise-terms.html">Terms of Service</a>
+    ·
+    <a
+      href="https://tally.so/r/eqlJEo"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Support
+    </a>
+  </p>
+</footer>
+```
+
+  </main>
+</body>
+</html>
