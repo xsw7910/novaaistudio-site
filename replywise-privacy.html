@@ -3,10 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+
+<meta
+ name="viewport"
+ content="width=device-width, initial-scale=1.0"
+/>
 
 <meta
  name="description"
@@ -42,10 +43,7 @@
       margin: 0;
       background: var(--background);
       color: var(--text-primary);
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;
       line-height: 1.7;
     }
@@ -73,18 +71,21 @@
       justify-content: center;
       width: 50px;
       height: 50px;
-      border-radius: 15px;
-      color: #ffffff;
-      background: linear-gradient(135deg, #2563eb, #0f8f83);
-      box-shadow: 0 10px 24px rgba(15, 124, 130, 0.22);
-      font-size: 24px;
-      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .brand-icon img {
+      display: block;
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+      border-radius: 12px;
     }
 
     .brand-name {
       margin: 0;
-      font-size: 20px;
       color: var(--heading);
+      font-size: 20px;
     }
 
     .brand-developer {
@@ -126,9 +127,9 @@
     .contents {
       margin-bottom: 32px;
       padding: 18px 20px;
+      background: #f9fcfc;
       border: 1px solid var(--border);
       border-radius: 14px;
-      background: #f9fcfc;
     }
 
     .contents-title {
@@ -266,11 +267,22 @@
   <main class="page-container">
     <header class="header">
       <div class="brand">
-        <div class="brand-icon" aria-hidden="true">R</div>
+        <div class="brand-icon">
+          <img
+            src="replywise_app_icon.png"
+            alt="ReplyWise app icon"
+          />
+        </div>
 
+```
     <div>
-      <p class="brand-name"><strong>ReplyWise</strong></p>
-      <p class="brand-developer">by NovaAI Studio</p>
+      <p class="brand-name">
+        <strong>ReplyWise</strong>
+      </p>
+
+      <p class="brand-developer">
+        by NovaAI Studio
+      </p>
     </div>
   </div>
 
@@ -290,7 +302,9 @@
 
 <article class="content-card">
   <nav class="contents" aria-label="Privacy Policy contents">
-    <p class="contents-title">Contents</p>
+    <p class="contents-title">
+      Contents
+    </p>
 
     <div class="contents-links">
       <a href="#about">About this policy</a>
@@ -837,13 +851,24 @@
   </p>
 
   <div class="contact-box">
-    <p><strong>Developer:</strong> NovaAI Studio</p>
-    <p><strong>Application:</strong> ReplyWise</p>
-    <p><strong>Location:</strong> Alberta, Canada</p>
+    <p>
+      <strong>Developer:</strong>
+      NovaAI Studio
+    </p>
+
+    <p>
+      <strong>Application:</strong>
+      ReplyWise
+    </p>
+
+    <p>
+      <strong>Location:</strong>
+      Alberta, Canada
+    </p>
 
     <p>
       <strong>Email:</strong>
-      <a href="mailto:novaai.studio.support@gmail.com">
+      <a href="mailto:support@novaaistudio.ca">
         support@novaaistudio.ca
       </a>
     </p>
@@ -882,10 +907,18 @@
   </p>
 
   <p>
-    <a href="replywise-privacy.html">Privacy Policy</a>
+    <a href="replywise-privacy.html">
+      Privacy Policy
+    </a>
+
     ·
-    <a href="replywise-terms.html">Terms of Service</a>
+
+    <a href="replywise-terms.html">
+      Terms of Service
+    </a>
+
     ·
+
     <a
       href="https://tally.so/r/eqlJEo"
       target="_blank"
@@ -895,6 +928,7 @@
     </a>
   </p>
 </footer>
+```
 
   </main>
 </body>
